@@ -5248,7 +5248,7 @@ static int clusterManagerFixSlotsCoverage(char *all_slots) {
     dictReleaseIterator(iter);
 
     /* we want explicit manual confirmation from users for all the fix cases */
-    int ignore_force = 1;
+    int ignore_force = 0;
 
     /*  Handle case "1": keys in no node. */
     if (listLength(none) > 0) {
